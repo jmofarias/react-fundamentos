@@ -1,0 +1,22 @@
+.wrapper {
+   max-width: 70rem;
+   margin: 2rem auto;
+   padding: 0 1rem;
+   
+   display: grid;
+   /* largura da coluna será de 256px mas irá ser flexível */
+   grid-template-columns: 256px 1fr;
+   gap: 2rem;
+   align-items: flex-start;
+}
+
+@media(max-width: 768px) {
+   /* trabalhando com 14px no font-size padrão */
+   html {
+      font-size: 87.5%;
+   }
+
+   .wrapper {
+      grid-template-columns: 1fr;
+   }
+}
